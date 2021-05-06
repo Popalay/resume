@@ -31,3 +31,4 @@ jobs:
           commit_message: Generate Resume
           branch: master
           file_pattern: resume.pdf index.html
+          status_options: '--untracked-files=no'
