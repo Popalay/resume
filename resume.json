@@ -1,0 +1,185 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Denys Nykyforov",
+    "label": "Software Engineer",
+    "image": "",
+    "email": "popalay1@gmail.com",
+    "phone": "+38 (066) 527-82-43",
+    "summary": "A forward-thinking developer offering more than seven years of experience in designing, building, testing and supporting Android applications. Adaptable and able to quickly pick up new techniques. Having much experience of creating solutions to complex problems.",
+    "location": {
+      "countryCode": "UA",
+      "address": "Kharkiv, Ukraine"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "Denys Nykyforov",
+        "url": "https://www.linkedin.com/in/ACoAAB6_jmABjit6p6pj56eeww8bR4XXcAIY9Bc/"
+      },
+      {
+        "network": "Twitter",
+        "username": "devpopalay",
+        "url": "http://twitter.com/devpopalay"
+      },
+      {
+        "network": "Github",
+        "username": "popalay",
+        "url": "http://github.com/popalay"
+      },
+      {
+        "network": "Google Play",
+        "username": "Denys Nykyforov",
+        "url": "https://play.google.com/store/apps/dev?id=8807492488697709539"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Grab",
+      "location": "Singapore",
+      "position": "Senior Software Engineer",
+      "startDate": "2020-02-28",
+      "endDate": "2021-03-31",
+      "highlights": [],
+      "summary": "Grab is Southeast Asia’s leading superapp. It provides everyday services such as deliveries, mobility, financial services, enterprise services and others to millions of users across the region.",
+      "url": "https://www.grab.com/sg/"
+    },
+    {
+      "name": "SoftServe",
+      "location": "Kharkiv, Ukraine",
+      "position": "Software Engineer",
+      "startDate": "2017-10-31",
+      "endDate": "2019-11-30",
+      "highlights": [],
+      "summary": "SoftServe is a digital consulting company that advises and provides at the cutting-edge of technology.",
+      "url": "https://www.softserveinc.com/en-us"
+    },
+    {
+      "name": "AppliKey",
+      "location": "Kharkiv, Ukraine",
+      "position": "Android Developer",
+      "startDate": "2014-10-31",
+      "endDate": "2017-10-31",
+      "highlights": [],
+      "summary": "Applikey is a top mobile app development company creating custom native, hybrid, and cross-platform applications for businesses worldwide.",
+      "url": "https://www.linkedin.com/company/applikey-solutions/"
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "droidcon",
+      "position": "International Volunteer",
+      "startDate": "2018-06-30",
+      "endDate": "2018-07-02",
+      "summary": "",
+      "highlights": [],
+      "url": "https://www.linkedin.com/company/droidcon/"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Associate Android Developer",
+      "date": "2018-12-08",
+      "url": "https://www.credential.net/3451f69d-4fbe-48e0-8dcf-669f271b638b",
+      "issuer": "Google"
+    }
+  ],
+  "education": [
+    {
+      "institution": "National Technical University «Kharkiv Polytechnic Institute»",
+      "area": "System Programming",
+      "studyType": "Master",
+      "startDate": "2012-12-31",
+      "endDate": "2018-12-31",
+      "score": "4.8",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Programming Languages/Technologies",
+      "keywords": [
+        "Android SDK",
+        "Kotlin",
+        "Java",
+        "Software Architecture Design",
+        "Clean Architecture",
+        "MVP/MVVM/MVI"
+      ]
+    },
+    {
+      "name": "Frameworks/Libraries",
+      "keywords": [
+        "RxJava",
+        "Coroutines",
+        "Android Data Binding",
+        "Dagger2",
+        "Koin",
+        "Android Jetpack",
+        "Retrofit",
+        "Ktor",
+        "Jetpack Compose",
+        "Kotlin Multiplatform",
+        "Glide",
+        "Picasso"
+      ]
+    },
+    {
+      "name": "Development tools",
+      "keywords": [
+        "IntelliJ IDEA",
+        "Android Studio",
+        "VS Code"
+      ]
+    },
+    {
+      "name": "Testing tools",
+      "keywords": [
+        "jUnit5",
+        "Mockito",
+        "Spek",
+        "KotlinTest",
+        "Espresso"
+      ]
+    },
+    {
+      "name": "Methodologies",
+      "keywords": [
+        "Agile, SCRUM",
+        "Kanban"
+      ]
+    },
+    {
+      "name": "Others",
+      "keywords": [
+        "Go",
+        "Dart/Flutter",
+        "Python"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Ukrainian",
+      "fluency": "Native Speaker"
+    },
+    {
+      "language": "Russian",
+      "fluency": "Native Speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Advanced"
+    }
+  ],
+  "interests": [],
+  "references": [],
+  "projects": [],
+  "meta": {
+    "version": "v1.0.0",
+    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json"
+  }
+}
