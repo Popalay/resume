@@ -9,7 +9,8 @@
     "summary": "A forward-thinking developer offering more than seven years of experience in designing, building, testing and supporting Android applications. Adaptable and able to quickly pick up new techniques. Having much experience of creating solutions to complex problems.",
     "location": {
       "countryCode": "UA",
-      "address": "Kharkiv, Ukraine"
+      "city": "Kharkiv",
+      "region": "Ukraine"
     },
     "profiles": [
       {
@@ -64,6 +65,108 @@
       "highlights": [],
       "summary": "Applikey is a top mobile app development company creating custom native, hybrid, and cross-platform applications for businesses worldwide.",
       "url": "https://www.linkedin.com/company/applikey-solutions/"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Barnee",
+      "entity": "Home",
+      "description": "Cocktail recipe app.",
+      "startDate": "2021-04-01",
+      "endDate": "",
+      "url": "https://play.google.com/store/apps/details?id=com.popalay.barnee",
+      "roles": [
+        "Senior Developer"
+      ],
+      "highlights": [
+        "Hobby project;",
+        "Kotlin Multiplatform Mobile;",
+        "Jetpack Compose"
+      ]
+    },
+    {
+      "name": "Grab",
+      "entity": "Grab",
+      "description": "Grab is Southeast Asia's #1 ride-hailing app, food delivery service, and cashless payment solution all in one. With the new Grab app, you'll get the most convenient booking service for private cars and taxis from the largest community of drivers in the region, food delivery from your favorite restaurants to satisfy any craving, and cashless payments in-app and at merchants across the city. Whatever you need, Grab has you covered.",
+      "startDate": "2020-02-10",
+      "endDate": "2021-03-31",
+      "url": "https://play.google.com/store/apps/details?id=com.grabtaxi.passenger",
+      "roles": [
+        "Senior Developer"
+      ],
+      "highlights": [
+        "Working with more than 100 team mates from different time zones;",
+        "Working both on passenger application and on driver application;",
+        "More than 1 million daily active users;",
+        "Build time was reduced by 60% by splitting modules and removing unnecessary dependencies;",
+        "Code coverage was increased from 40% to 70%",
+        "Started migration to Bazel build system"
+      ]
+    },
+    {
+      "name": "Affiliate Marketing app",
+      "entity": "SoftServe",
+      "description": "A referral app that anyone can use to refer trusted home services. With the click of a button, you can refer your Clients, friends, family, co-workers, and even someone you just met. This app helps you make easy money by sharing services with friends, family or acquaintances that trust your relationship and recommendation. Helps you make money by referring services that you use, trust, or sell. Increases your network of products you can monetize with your existing customer base.",
+      "startDate": "2018-08-31",
+      "endDate": "2019-11-31",
+      "url": "",
+      "roles": [
+        "Developer",
+        "Technical lead"
+      ],
+      "highlights": [
+        "20 team members"
+      ]
+    },
+    {
+      "name": "Application for agriculture sector",
+      "entity": "SoftServe",
+      "description": "Project that supplies farmers with different agri-related functionalities such as: weather forecasts, help for day to day business, agri news, vocational training and experts’ consultancy.",
+      "startDate": "2017-10-31",
+      "endDate": "2018-08-31",
+      "url": "",
+      "roles": [
+        "Developer"
+      ],
+      "highlights": [
+        "18-20 team members"
+      ]
+    },
+    {
+      "name": "Application for watching ads",
+      "entity": "Applikey",
+      "description": "App for watching branded and sponsored short video content. The app uses device sensors to measure engagement and verifies that you watched the video. Answer a quick series of questions to determine your interest level and overall openness to messaging, and receive rewards that you can exchange for cash, merchandise, and charitable contributions.",
+      "startDate": "2017-02-31",
+      "endDate": "2017-10-31",
+      "url": "",
+      "roles": [
+        "Developer"
+      ]
+    },
+    {
+      "name": "Fingerprint scanner",
+      "entity": "Applikey",
+      "description": "Real fingerprint collection application that will only work when a supported accessory is detected by the application. The app works with connected by USB or Bluetooth devices. This Application allows you to scan high quality fingerprint images and store them for various purposes. Available options are: Email, FTP, and Save to File.",
+      "startDate": "2015-08-31",
+      "endDate": "2016-02-31",
+      "url": "",
+      "roles": [
+        "Developer"
+      ],
+      "highlights": [
+        "The application was written without having a physical device"
+      ]
+    },
+    {
+      "name": "Marketplace app",
+      "entity": "Applikey",
+      "description": "A marketplace and community for buying, selling & renting designer fashion.",
+      "startDate": "2015-02-31",
+      "endDate": "2015-07-31",
+      "url": "",
+      "roles": [
+        "Developer"
+      ]
     }
   ],
   "volunteer": [
@@ -177,7 +280,6 @@
   ],
   "interests": [],
   "references": [],
-  "projects": [],
   "meta": {
     "version": "v1.0.0",
     "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json"
