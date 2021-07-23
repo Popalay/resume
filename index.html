@@ -9,30 +9,28 @@
     <style>:root {
   color-scheme: light dark;
 
-  /* Colors */
-  --backgroundColor: #ffffff;
-  --primaryColor: #212529;
-  --secondaryColor: #95a5a6;
-  --accentColor: #f1c40f;
-  --linkColor: #2ecc71;
-  --mutedColor: #f4f6f6;
+  --color-background: #ffffff;
+  --color-primary: #212529;
+  --color-secondary: #95a5a6;
+  --color-muted: #f4f6f6;
+  --color-accent: #f1c40f;
+  --color-link: #2ecc71;
 
-  /* Typography */
-  --ratio: 1.25;
+  --scale-ratio: 1.25;
   --scale0: 1rem;
-  --scale1: calc(var(--scale0) * var(--ratio));
-  --scale2: calc(var(--scale1) * var(--ratio));
-  --scale3: calc(var(--scale2) * var(--ratio));
-  --scale4: calc(var(--scale3) * var(--ratio));
-  --scale5: calc(var(--scale4) * var(--ratio));
+  --scale1: calc(var(--scale0) * var(--scale-ratio));
+  --scale2: calc(var(--scale1) * var(--scale-ratio));
+  --scale3: calc(var(--scale2) * var(--scale-ratio));
+  --scale4: calc(var(--scale3) * var(--scale-ratio));
+  --scale5: calc(var(--scale4) * var(--scale-ratio));
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --backgroundColor: #181a1b;
-    --primaryColor: #d1cdc7;
-    --secondaryColor: #aaa398;
-    --mutedColor: #1e2021;
+    --color-background: #181a1b;
+    --color-primary: #d1cdc7;
+    --color-secondary: #aaa398;
+    --color-muted: #1e2021;
   }
 }
 
@@ -47,8 +45,8 @@ html {
 }
 
 body {
-  background: var(--backgroundColor);
-  color: var(--primaryColor);
+  background: var(--color-background);
+  color: var(--color-primary);
   display: grid;
   font: 1em/1.5 Lato, sans-serif;
   gap: 2em;
@@ -83,18 +81,18 @@ li + li {
 
 li::marker,
 .network {
-  color: var(--secondaryColor);
+  color: var(--color-secondary);
 }
 
 a {
-  color: var(--linkColor);
+  color: var(--color-link);
   text-decoration: none;
   transition: color 0.2s;
 }
 
 a:focus,
 a:hover {
-  color: var(--accentColor);
+  color: var(--color-accent);
 }
 
 h1,
@@ -115,12 +113,12 @@ h1 {
 }
 
 h2 {
-  color: var(--secondaryColor);
+  color: var(--color-secondary);
   font-size: var(--scale4);
 }
 
 h3 {
-  color: var(--accentColor);
+  color: var(--color-accent);
   font-size: var(--scale3);
   grid-column: side;
   margin-bottom: 1rem;
@@ -139,12 +137,12 @@ h6 {
 }
 
 blockquote {
-  border-left: 0.2em solid var(--mutedColor);
+  border-left: 0.2em solid var(--color-muted);
   padding-left: 1em;
 }
 
 cite {
-  color: var(--secondaryColor);
+  color: var(--color-secondary);
   font-style: inherit;
 }
 
@@ -158,17 +156,24 @@ svg {
 }
 
 .masthead {
-  background: var(--mutedColor);
+  background: var(--color-muted);
   display: inherit;
   gap: inherit;
   grid-column: full;
   grid-template-columns: inherit;
   padding: 4em 0;
+  text-align: center;
 }
 
 .masthead > *,
 section {
   grid-column: main;
+}
+
+.masthead > img {
+  border-radius: 50%;
+  margin: 0 auto;
+  max-width: 12em;
 }
 
 article > * + *,
@@ -197,8 +202,8 @@ blockquote > * + * {
   justify-content: space-between;
 }
 
-.spaced-list:first-child::before {
-  border-bottom: 1px solid var(--mutedColor);
+.spaced-list::before {
+  border-bottom: 1px solid var(--color-muted);
   content: '';
   flex-grow: 1;
   margin: 0 1em;
@@ -217,7 +222,7 @@ blockquote > * + * {
 }
 
 .tag-list > li {
-  background: var(--mutedColor);
+  background: var(--color-muted);
   margin: 0 0.2em 0.2em 0;
   padding: 0.2em 0.6em;
 }
@@ -228,9 +233,19 @@ blockquote > * + * {
     margin-bottom: inherit;
   }
 
+  .masthead {
+    text-align: inherit;
+  }
+
   .masthead > *,
   section {
     grid-column: content;
+  }
+
+  .masthead img {
+    grid-column: side;
+    grid-row: span 2;
+    max-width: 100%;
   }
 
   section {
@@ -245,10 +260,14 @@ blockquote > * + * {
   </head>
   <body>
       <header class="masthead">
+          <img src="" alt="">
         <div>
             <h1>Denys Nykyforov</h1>
             <h2>Software Engineer</h2>
         </div>
+          <article>
+            <p>A forward-thinking developer offering more than seven years of experience in designing, building, testing and supporting Android applications. Adaptable and able to quickly pick up new techniques. Having much experience of creating solutions to complex problems.</p>
+          </article>
         <ul class="icon-list">
               <li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
@@ -284,12 +303,6 @@ blockquote > * + * {
             </li>
         </ul>
       </header>
-        <section id="about">
-          <h3>About</h3>
-          <article>
-            <p>A forward-thinking developer offering more than seven years of experience in designing, building, testing and supporting Android applications. Adaptable and able to quickly pick up new techniques. Having much experience of creating solutions to complex problems.</p>
-          </article>
-        </section>
 
       <section id="work">
         <h3>Work</h3>
@@ -297,48 +310,52 @@ blockquote > * + * {
             <article>
               <header>
                 <div class="spaced-list">
-                  <h4>Grab</h4>
+                  <h4>Senior Software Engineer</h4>
+                  <span>
+                    <time datetime="2021-07-26">Jul 2021</time> –
+                    Present
+                  </span>
+                </div>
+                <strong><a href="https://www.lyft.com/">Lyft</a></strong>
+              </header>
+                <p>Lyft is a U.S.-based ridesharing company based in San Francisco, California. Lyft develops and operates the Lyft mobile apps, offering car rides, scooters, a bicycle-sharing system.</p>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Senior Software Engineer</h4>
                   <span>
                     <time datetime="2020-02-28">Feb 2020</time> –
                     <time datetime="2021-03-31">Mar 2021</time>
                   </span>
                 </div>
-                <div class="spaced-list">
-                    <strong>Senior Software Engineer</strong>
-                    <a href="https://www.grab.com/sg/">www.grab.com/sg</a>
-                </div>
+                <strong><a href="https://www.grab.com/sg/">Grab</a></strong>
               </header>
                 <p>Grab is Southeast Asia’s leading superapp. It provides everyday services such as deliveries, mobility, financial services, enterprise services and others to millions of users across the region.</p>
             </article>
             <article>
               <header>
                 <div class="spaced-list">
-                  <h4>SoftServe</h4>
+                  <h4>Software Engineer</h4>
                   <span>
                     <time datetime="2017-10-31">Oct 2017</time> –
                     <time datetime="2019-11-30">Nov 2019</time>
                   </span>
                 </div>
-                <div class="spaced-list">
-                    <strong>Software Engineer</strong>
-                    <a href="https://www.softserveinc.com/en-us">www.softserveinc.com/en-us</a>
-                </div>
+                <strong><a href="https://www.softserveinc.com/en-us">SoftServe</a></strong>
               </header>
                 <p>SoftServe is a digital consulting company that advises and provides at the cutting-edge of technology.</p>
             </article>
             <article>
               <header>
                 <div class="spaced-list">
-                  <h4>AppliKey</h4>
+                  <h4>Android Developer</h4>
                   <span>
                     <time datetime="2014-10-31">Oct 2014</time> –
                     <time datetime="2017-10-31">Oct 2017</time>
                   </span>
                 </div>
-                <div class="spaced-list">
-                    <strong>Android Developer</strong>
-                    <a href="https://www.linkedin.com/company/applikey-solutions/">www.linkedin.com/company/applikey-solutions</a>
-                </div>
+                <strong><a href="https://www.linkedin.com/company/applikey-solutions/">AppliKey</a></strong>
               </header>
                 <p>Applikey is a top mobile app development company creating custom native, hybrid, and cross-platform applications for businesses worldwide.</p>
             </article>
@@ -350,16 +367,13 @@ blockquote > * + * {
             <article>
               <header>
                 <div class="spaced-list">
-                  <h4>droidcon</h4>
+                  <h4>International Volunteer</h4>
                   <span>
                     <time datetime="2018-06-30">Jun 2018</time> –
                     <time datetime="2018-07-02">Jul 2018</time>
                   </span>
                 </div>
-                <div class="spaced-list">
-                    <strong>International Volunteer</strong>
-                    <a href="https://www.linkedin.com/company/droidcon/">www.linkedin.com/company/droidcon</a>
-                </div>
+                <strong><a href="https://www.linkedin.com/company/droidcon/">droidcon</a></strong>
               </header>
                 
             </article>
@@ -377,9 +391,7 @@ blockquote > * + * {
                     <time datetime="2018-12-31">Dec 2018</time>
                   </span>
                 </div>
-                <div class="spaced-list">
-                    <strong>System Programming</strong>
-                </div>
+                  <strong>System Programming</strong>
               </header>
                 <p>Master</p>
             </article>
@@ -391,22 +403,18 @@ blockquote > * + * {
             <article>
               <header>
                 <div class="spaced-list">
-                  <h4>Barnee</h4>
+                  <h4><a href="https://play.google.com/store/apps/details?id&#x3D;com.popalay.barnee">Barnee</a></h4>
                   <span>
                     <time datetime="2021-04-01">Apr 2021</time> –
                     Present
                   </span>
                 </div>
-                <div class="spaced-list">
-                  <span>
-                      <strong>Senior Developer</strong>
-                      at <strong>Home</strong>
-                  </span>
-                    <a href="https://play.google.com/store/apps/details?id&#x3D;com.popalay.barnee">play.google.com/store/apps/details?id&#x3D;com.popalay.barnee</a>
-                </div>
+                <span>
+                    <strong>Senior Developer</strong>
+                    at <strong>Home</strong>
+                </span>
               </header>
                 <p>Cocktail recipe app.</p>
-                <h5>Highlights</h5>
                 <ul>
                     <li>Hobby project;</li>
                     <li>Kotlin Multiplatform Mobile;</li>
@@ -416,22 +424,18 @@ blockquote > * + * {
             <article>
               <header>
                 <div class="spaced-list">
-                  <h4>Grab</h4>
+                  <h4><a href="https://play.google.com/store/apps/details?id&#x3D;com.grabtaxi.passenger">Grab</a></h4>
                   <span>
                     <time datetime="2020-02-10">Feb 2020</time> –
                     <time datetime="2021-03-31">Mar 2021</time>
                   </span>
                 </div>
-                <div class="spaced-list">
-                  <span>
-                      <strong>Senior Developer</strong>
-                      at <strong>Grab</strong>
-                  </span>
-                    <a href="https://play.google.com/store/apps/details?id&#x3D;com.grabtaxi.passenger">play.google.com/store/apps/details?id&#x3D;com.grabtaxi.passenger</a>
-                </div>
+                <span>
+                    <strong>Senior Developer</strong>
+                    at <strong>Grab</strong>
+                </span>
               </header>
                 <p>Grab is Southeast Asia's #1 ride-hailing app, food delivery service, and cashless payment solution all in one. With the new Grab app, you'll get the most convenient booking service for private cars and taxis from the largest community of drivers in the region, food delivery from your favorite restaurants to satisfy any craving, and cashless payments in-app and at merchants across the city. Whatever you need, Grab has you covered.</p>
-                <h5>Highlights</h5>
                 <ul>
                     <li>Working with more than 100 team mates from different time zones;</li>
                     <li>Working both on passenger application and on driver application;</li>
@@ -450,16 +454,12 @@ blockquote > * + * {
                     <time datetime="2019-11-31">Dec 2019</time>
                   </span>
                 </div>
-                <div class="spaced-list">
-                  <span>
-                      <strong>Developer, Technical lead</strong>
-                      at <strong>SoftServe</strong>
-                  </span>
-                    <a href=""></a>
-                </div>
+                <span>
+                    <strong>Developer, Technical lead</strong>
+                    at <strong>SoftServe</strong>
+                </span>
               </header>
                 <p>A referral app that anyone can use to refer trusted home services. With the click of a button, you can refer your Clients, friends, family, co-workers, and even someone you just met. This app helps you make easy money by sharing services with friends, family or acquaintances that trust your relationship and recommendation. Helps you make money by referring services that you use, trust, or sell. Increases your network of products you can monetize with your existing customer base.</p>
-                <h5>Highlights</h5>
                 <ul>
                     <li>20 team members</li>
                 </ul>
@@ -473,16 +473,12 @@ blockquote > * + * {
                     <time datetime="2018-08-31">Aug 2018</time>
                   </span>
                 </div>
-                <div class="spaced-list">
-                  <span>
-                      <strong>Developer</strong>
-                      at <strong>SoftServe</strong>
-                  </span>
-                    <a href=""></a>
-                </div>
+                <span>
+                    <strong>Developer</strong>
+                    at <strong>SoftServe</strong>
+                </span>
               </header>
                 <p>Project that supplies farmers with different agri-related functionalities such as: weather forecasts, help for day to day business, agri news, vocational training and experts’ consultancy.</p>
-                <h5>Highlights</h5>
                 <ul>
                     <li>18-20 team members</li>
                 </ul>
@@ -496,13 +492,10 @@ blockquote > * + * {
                     <time datetime="2017-10-31">Oct 2017</time>
                   </span>
                 </div>
-                <div class="spaced-list">
-                  <span>
-                      <strong>Developer</strong>
-                      at <strong>Applikey</strong>
-                  </span>
-                    <a href=""></a>
-                </div>
+                <span>
+                    <strong>Developer</strong>
+                    at <strong>Applikey</strong>
+                </span>
               </header>
                 <p>App for watching branded and sponsored short video content. The app uses device sensors to measure engagement and verifies that you watched the video. Answer a quick series of questions to determine your interest level and overall openness to messaging, and receive rewards that you can exchange for cash, merchandise, and charitable contributions.</p>
             </article>
@@ -515,16 +508,12 @@ blockquote > * + * {
                     <time datetime="2016-02-31">Mar 2016</time>
                   </span>
                 </div>
-                <div class="spaced-list">
-                  <span>
-                      <strong>Developer</strong>
-                      at <strong>Applikey</strong>
-                  </span>
-                    <a href=""></a>
-                </div>
+                <span>
+                    <strong>Developer</strong>
+                    at <strong>Applikey</strong>
+                </span>
               </header>
                 <p>Real fingerprint collection application that will only work when a supported accessory is detected by the application. The app works with connected by USB or Bluetooth devices. This Application allows you to scan high quality fingerprint images and store them for various purposes. Available options are: Email, FTP, and Save to File.</p>
-                <h5>Highlights</h5>
                 <ul>
                     <li>The application was written without having a physical device</li>
                 </ul>
@@ -538,13 +527,10 @@ blockquote > * + * {
                     <time datetime="2015-07-31">Jul 2015</time>
                   </span>
                 </div>
-                <div class="spaced-list">
-                  <span>
-                      <strong>Developer</strong>
-                      at <strong>Applikey</strong>
-                  </span>
-                    <a href=""></a>
-                </div>
+                <span>
+                    <strong>Developer</strong>
+                    at <strong>Applikey</strong>
+                </span>
               </header>
                 <p>A marketplace and community for buying, selling &amp; renting designer fashion.</p>
             </article>
@@ -556,15 +542,12 @@ blockquote > * + * {
             <article>
               <header>
                 <div class="spaced-list">
-                  <h4>Associate Android Developer</h4>
+                  <h4><a href="https://www.credential.net/3451f69d-4fbe-48e0-8dcf-669f271b638b">Associate Android Developer</a></h4>
                     <time datetime="2018-12-08">Dec 2018</time>
                 </div>
-                <div class="spaced-list">
-                    <span>
-                      Issued by <strong>Google</strong>
-                    </span>
-                    <a href="https://www.credential.net/3451f69d-4fbe-48e0-8dcf-669f271b638b">www.credential.net/3451f69d-4fbe-48e0-8dcf-669f271b638b</a>
-                </div>
+                  <span>
+                    Issued by <strong>Google</strong>
+                  </span>
               </header>
             </article>
         </div>
