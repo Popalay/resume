@@ -39,9 +39,19 @@
     {
       "name": "Lyft",
       "location": "Ukraine",
+      "position": "Staff Software Engineer",
+      "startDate": "2024-01-10",
+      "endDate": null,
+      "highlights": [],
+      "summary": "Lyft is a U.S.-based ridesharing company based in San Francisco, California. Lyft develops and operates the Lyft mobile apps, offering car rides, scooters, a bicycle-sharing system.",
+      "url": "https://www.lyft.com/"
+    },
+    {
+      "name": "Lyft",
+      "location": "Ukraine",
       "position": "Senior Software Engineer",
       "startDate": "2021-07-26",
-      "endDate": null,
+      "endDate": "2024-01-10",
       "highlights": [],
       "summary": "Lyft is a U.S.-based ridesharing company based in San Francisco, California. Lyft develops and operates the Lyft mobile apps, offering car rides, scooters, a bicycle-sharing system.",
       "url": "https://www.lyft.com/"
