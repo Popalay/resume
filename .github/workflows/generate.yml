@@ -22,13 +22,13 @@ jobs:
           theme: jsonresume-theme-even
           input_file: resume.json
           output_file: index.html
-      # - id: render-pdf
-      #   name: Render JSON Resume PDF
-      #   uses: fifsky/html-to-pdf-action@v0.1.0
-      #   with:
-      #     htmlFile: index.html
-      #     outputFile: resume.pdf
-      #     pdfOptions: '{"format": "A4", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
+      - id: render-pdf
+        name: Render JSON Resume PDF
+        uses: fifsky/html-to-pdf-action@master
+        with:
+          htmlFile: index.html
+          outputFile: resume.pdf
+          pdfOptions: '{"format": "A4", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
       - name: Create release for tags
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
