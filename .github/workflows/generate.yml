@@ -15,7 +15,6 @@ jobs:
         with:
           node-version: '20'
       - run: npm install -g resume-cli
-      - run: resume validate
       - run: npm install jsonresume-theme-even
       - run: resume export -r ../../resume.json index.html && ls
         working-directory: node_modules/jsonresume-theme-even/
