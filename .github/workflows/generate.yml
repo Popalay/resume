@@ -10,12 +10,25 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - id: checkout
+        uses: actions/checkout@v4.1.4
         with:
-          node-version: '20'
-      - run: npm install resumed jsonresume-theme-even
-      - run: resumed export resume.json -o index.html -t even
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+      - id: render-html
+        name: Render JSON Resume HTML
+        uses: chessmango/action-resumed-render@v1.1.1
+        with:
+          theme: jsonresume-theme-even
+          input_file: resume.json
+          output_file: index.html
+      - id: render-pdf
+        name: Render JSON Resume PDF
+        uses: fifsky/html-to-pdf-action@v0.1.0
+        with:
+          htmlFile: index.html
+          outputFile: resume.pdf
+          pdfOptions: '{"format": "A4", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
       - name: Create release for tags
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
