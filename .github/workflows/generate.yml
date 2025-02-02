@@ -28,7 +28,7 @@ jobs:
         with:
           htmlFile: index.html
           outputFile: resume.pdf
-          pdfOptions: '{"format": "A4", "margin": {"left": "10mm", "right": "10mm", "bottom": "10mm"}}'
+          pdfOptions: '{"format": "A4", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
       - name: Create release for tags
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
