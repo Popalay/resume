@@ -15,9 +15,12 @@ jobs:
         with:
           node-version: '20'
       - run: npm install -g resume-cli
+      - run: resume validate
       - run: npm install jsonresume-theme-even
-      - run: resume export index.html --theme even
-      - run: resume export resume.pdf --theme even
+      - run: resume export -r ../../resume.json index.html && ls
+        working-directory: node_modules/jsonresume-theme-even/
+      - run: resume export -r ../../resume.json index.pdf && ls
+        working-directory: node_modules/jsonresume-theme-even/
       - name: Create release for tags
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
