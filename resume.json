@@ -9,7 +9,7 @@
     "summary": "A forward-thinking developer offering more than seven years of experience in designing, building, testing and supporting Android applications. Adaptable and able to quickly pick up new techniques. Having much experience of creating solutions to complex problems.",
     "location": {
       "countryCode": "UA",
-      "city": "Kharkiv",
+      "city": "Lviv",
       "region": "Ukraine"
     },
     "profiles": [
@@ -19,9 +19,9 @@
         "url": "https://www.linkedin.com/in/ACoAAB6_jmABjit6p6pj56eeww8bR4XXcAIY9Bc/"
       },
       {
-        "network": "Twitter",
+        "network": "X",
         "username": "devpopalay",
-        "url": "http://twitter.com/devpopalay"
+        "url": "http://x.com/devpopalay"
       },
       {
         "network": "Github",
@@ -42,7 +42,9 @@
       "position": "Staff Software Engineer",
       "startDate": "2024-01-10",
       "endDate": null,
-      "highlights": [],
+      "highlights": [
+        "Maintainer of an SDUI framework"
+      ],
       "summary": "Lyft is a U.S.-based ridesharing company based in San Francisco, California. Lyft develops and operates the Lyft mobile apps, offering car rides, scooters, a bicycle-sharing system.",
       "url": "https://www.lyft.com/"
     },
@@ -52,7 +54,9 @@
       "position": "Senior Software Engineer",
       "startDate": "2021-07-26",
       "endDate": "2024-01-10",
-      "highlights": [],
+      "highlights": [
+        "Maintainer of an SDUI framework"
+      ],
       "summary": "Lyft is a U.S.-based ridesharing company based in San Francisco, California. Lyft develops and operates the Lyft mobile apps, offering car rides, scooters, a bicycle-sharing system.",
       "url": "https://www.lyft.com/"
     },
@@ -62,7 +66,14 @@
       "position": "Senior Software Engineer",
       "startDate": "2020-02-28",
       "endDate": "2021-03-31",
-      "highlights": [],
+      "highlights": [
+        "Working with more than 100 team mates from different time zones;",
+        "Working both on passenger application and on driver application;",
+        "More than 1 million daily active users;",
+        "Build time was reduced by 60% by splitting modules and removing unnecessary dependencies;",
+        "Code coverage was increased from 40% to 70%",
+        "Started migration to Bazel build system"
+      ],
       "summary": "Grab is Southeast Asia’s leading superapp. It provides everyday services such as deliveries, mobility, financial services, enterprise services and others to millions of users across the region.",
       "url": "https://www.grab.com/sg/"
     },
@@ -102,25 +113,6 @@
         "Hobby project;",
         "Kotlin Multiplatform Mobile;",
         "Jetpack Compose"
-      ]
-    },
-    {
-      "name": "Grab",
-      "entity": "Grab",
-      "description": "Grab is Southeast Asia's #1 ride-hailing app, food delivery service, and cashless payment solution all in one. With the new Grab app, you'll get the most convenient booking service for private cars and taxis from the largest community of drivers in the region, food delivery from your favorite restaurants to satisfy any craving, and cashless payments in-app and at merchants across the city. Whatever you need, Grab has you covered.",
-      "startDate": "2020-02-10",
-      "endDate": "2021-03-31",
-      "url": "https://play.google.com/store/apps/details?id=com.grabtaxi.passenger",
-      "roles": [
-        "Senior Developer"
-      ],
-      "highlights": [
-        "Working with more than 100 team mates from different time zones;",
-        "Working both on passenger application and on driver application;",
-        "More than 1 million daily active users;",
-        "Build time was reduced by 60% by splitting modules and removing unnecessary dependencies;",
-        "Code coverage was increased from 40% to 70%",
-        "Started migration to Bazel build system"
       ]
     },
     {
@@ -195,7 +187,7 @@
       "position": "International Volunteer",
       "startDate": "2018-06-30",
       "endDate": "2018-07-02",
-      "summary": "",
+      "summary": "Volunteering at Droidcon involves participating in a global community focused on Android development. Volunteers assist in organizing events, managing logistics, and engaging with attendees. This experience offers networking opportunities with industry professionals and insights into the latest technological advancements. Volunteers play a crucial role in ensuring the smooth execution of conferences and workshops, contributing to a collaborative and educational atmosphere.",
       "highlights": [],
       "url": "https://www.linkedin.com/company/droidcon/"
     }
