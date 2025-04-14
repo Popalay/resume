@@ -1,6 +1,4 @@
-# Denys Nykyforov's resume
-
-https://popalay.github.io/resume/
+# [Denys Nykyforov's resume](https://resume.popalay.com/)
 
 ## License
 ```
