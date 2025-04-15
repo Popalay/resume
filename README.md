@@ -1,4 +1,4 @@
-# [Denys Nykyforov's resume](https://resume.popalay.com/)
+# [Denys Nykyforov's resume](https://popalay.com/resume)
 
 ## License
 ```
